@@ -22,14 +22,14 @@ public class AdminMenu extends AppCompatActivity {
         alerts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openGuestRequests(); // creates main menu method name
+                openGuestTab(); // creates main menu method name
             }
         });
 
     }
 
-    public void openGuestRequests() {
-        Intent intent = new Intent(this, GuestRequests.class);
+    public void openGuestTab() {
+        Intent intent = new Intent(this, GuestTab.class);
         startActivity(intent);
     }
 }

@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".GuestTab"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".guestrequest"
+            android:label="@string/title_activity_guestrequest"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AdminMenu"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
@@ -18,7 +24,6 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

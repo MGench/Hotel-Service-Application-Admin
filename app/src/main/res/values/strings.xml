@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">PrototypeAdmin</string>
+    <string name="title_activity_guestrequest">guestrequest</string>
+    <string name="tab_text_1">All</string>
+    <string name="tab_text_2">Open</string>
+    <string name="tab_text_3">Closed</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment1"></string>
+    <string name="hello_blank_fragment2"></string>
+    <string name="hello_blank_fragment3"></string>
 </resources>
