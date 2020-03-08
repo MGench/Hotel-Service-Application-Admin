@@ -1,7 +1,9 @@
 package com.example.prototypeadmin;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
@@ -18,10 +20,25 @@ public class GuestTab extends AppCompatActivity {
     private TabItem tab1, tab2, tab3;
     public PageAdapter pageradapter;
 
+    TextView txt;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guest_tab);
+        txt = (TextView) findViewById(R.id.txt);
+
+        Intent i = getIntent(); // added object intent to receive data
+        String action = i.getAction();
+        String type = i.getType();
+        if (Intent.ACTION_SEND.equals(action) && type != null) // Shares Data
+        {
+            if ("text/plain".equals(type))
+            {
+                String getMessage = i.getStringExtra(Intent.EXTRA_TEXT);
+                txt.setText("Guest Request :"+getMessage); // checks validation of string getMessage
+            }
+        }
 
         getSupportActionBar().setTitle("Guest Request Panel");
 
