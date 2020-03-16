@@ -47,8 +47,8 @@
         android:id="@+id/rtxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="18sp" />
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"

@@ -42,7 +42,7 @@ public class GuestTab extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                reff = FirebaseDatabase.getInstance().getReference().child("guest");
+                reff = FirebaseDatabase.getInstance().getReference().child("Guest").child("guest1");
                 reff.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) { // method that updates the app when database is changed
